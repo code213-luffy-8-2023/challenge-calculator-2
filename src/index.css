@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+.dark {
+  --bg-color: #3b4664;
+  --text-color: white;
+  --toggle-bg: #252d44;
+  --toggle-circle: #cd4131;
+  --toggle-text: white;
+  --toggle-shadow: #922519;
+  --toggle-hover: #f96c5b;
+
+  --number-bg: #eae3db;
+  --number-text: #474c5a;
+  --number-shadow: #b6a499;
+  --number-hover: white;
+
+  --func-bg: #647299;
+  --func-text: white;
+  --func-shadow: #414e70;
+  --func-hover: #a2b3e1;
+
+  --screen-bg: #181f32;
+}
+
+.light {
+  --bg-color: #e6e6e6;
+  --text-color: #353429;
+  --toggle-bg: #d3cdcd;
+  --toggle-circle: #c75000;
+  --toggle-text: white;
+  --toggle-shadow: #913900;
+  --toggle-hover: #ff8b38;
+
+  --number-bg: #e5e4e0;
+  --number-text: var(--text-color);
+  --number-shadow: #aa9c8f;
+  --number-hover: white;
+
+  --func-bg: #388187;
+  --func-text: white;
+  --func-shadow: #1c6267;
+  --func-hover: #62b5bd;
+
+  --screen-bg: #eeeeee;
+}
+
+.contrast {
+  --bg-color: #17062a;
+  --text-color: #ffe05a;
+  --toggle-bg: #1e0836;
+  --toggle-circle: #01ddd1;
+  --toggle-text: #183c46;
+  --toggle-shadow: #6df9f0;
+  --toggle-hover: #94fff9;
+
+  --number-bg: #331b4d;
+  --number-text: var(--text-color);
+  --number-shadow: #801f96;
+  --number-hover: #8731af;
+
+  --func-bg: #8631b0;
+  --func-text: white;
+  --func-shadow: #bd15f4;
+  --func-hover: #8333ad;
+
+  --screen-bg: #1e0836;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  background-color: var(--bg-color);
+}

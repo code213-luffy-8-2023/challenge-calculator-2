@@ -1,0 +1,47 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-color);
+}
+
+.theme-container {
+  display: flex;
+  gap: 1em;
+  align-items: flex-end;
+}
+
+.theme-container > span {
+  text-transform: uppercase;
+}
+
+.toggle-numbers,
+.toggle {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+}
+
+.toggle-numbers span {
+  display: inline-block;
+  width: 16px;
+  text-align: center;
+}
+
+.toggle {
+  background-color: var(--toggle-bg);
+  border-radius: 10px;
+}
+
+.toggle button {
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.toggle button.active {
+  background-color: var(--toggle-circle);
+}

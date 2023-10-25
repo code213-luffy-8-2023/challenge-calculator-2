@@ -1,0 +1,71 @@
+.app {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.screen {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--text-color);
+  text-align: right;
+  padding: 32px;
+  background-color: var(--screen-bg);
+  border-radius: 8px;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  background-color: var(--toggle-bg);
+  padding: 32px;
+  border-radius: 8px;
+}
+
+.keypad button:last-child,
+.keypad button:nth-last-child(2) {
+  grid-column: span 2;
+}
+
+.keypad button {
+  font-size: 32px;
+  padding: 0.5em;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.keypad button.number {
+  background-color: var(--number-bg);
+  color: var(--number-text);
+  box-shadow: 0 4px var(--number-shadow);
+}
+
+.keypad button.number:hover {
+  background-color: var(--number-hover);
+}
+
+.keypad button.func {
+  background-color: var(--func-bg);
+  color: var(--func-text);
+  box-shadow: 0 4px var(--func-shadow);
+}
+
+.keypad button.func:hover {
+  background-color: var(--func-hover);
+}
+
+.keypad button.equal {
+  background-color: var(--toggle-circle);
+  color: var(--toggle-text);
+  box-shadow: 0 4px var(--toggle-shadow);
+}
+
+.keypad button.equal:hover {
+  background-color: var(--toggle-hover);
+}
